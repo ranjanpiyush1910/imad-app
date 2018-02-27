@@ -48,7 +48,7 @@ var articles = {
             
             </p>`
      
-},
+}
 };
 
 function createTemplate (data) {
