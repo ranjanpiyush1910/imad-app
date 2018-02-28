@@ -39,6 +39,7 @@ submit.onclick = function () {
         if (request.readyState ===  XMLHttpRequest.DONE) {
             //take some action
             if (request.status === 200) {
+              //Capture a list of names & render it as a list
               var names = request.responseText;
               names = JSON.parse(names);
               var list = '';
@@ -57,6 +58,6 @@ submit.onclick = function () {
     // Make a request
     request.open('GET', 'http://ranjanpiyush1910.imad.hasura-app.io/submit-name?name=' + name,true);
     request.send(null);
-    //Capture a list of names & render it as a list
+    
     
 };
