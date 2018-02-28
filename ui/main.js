@@ -27,8 +27,7 @@ button.onclick = function () {
 };
 
 //Submit names
-var nameInput = document.getElementById('name');
-var name = nameInput;
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     //Make a request to the server & send the name 
@@ -45,16 +44,15 @@ submit.onclick = function () {
               var list = '';
                for (var i=0; i<names.length ; i++) {
                list += '<li>' + names[i] + '</li>';
-    }
-    
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
-     
+               }
+               var ul = document.getElementById('namelist');
+               ul.innerHTML = list;
             }
-        }
+        }    
         //Not done yet 
     };
-    
+    var nameInput = document.getElementById('name');
+    var name = nameInput;
     // Make a request
     request.open('GET', 'http://ranjanpiyush1910.imad.hasura-app.io/submit-name?name=' + name,true);
     request.send(null);
