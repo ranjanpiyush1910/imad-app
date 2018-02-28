@@ -21,7 +21,7 @@ button.onclick = function () {
     };
     
     // Make a request
-    request.open('GET', 'https://ranjanpiyush1910.imad.hasura-app.io/counter',true);
+    request.open('GET', 'http://ranjanpiyush1910.imad.hasura-app.io/counter',true);
     request.send(null);
     
 };
