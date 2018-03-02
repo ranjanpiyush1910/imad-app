@@ -38,8 +38,8 @@ var articles = {
     title:'Article Two | PIYUSH RANJAN SAHOO',
     heading: 'Article Two',
     date: 'Mar 28,2018',
-    content: `
-            <p>
+    content: `            
+             <p>
                This is the content for my second article.   This is the content for my second article.  This is the content for my second article.
                This is the content for my second article.  This is the content for my second article.  This is the content for my second article.
             
